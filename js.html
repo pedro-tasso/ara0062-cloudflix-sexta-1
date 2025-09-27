@@ -7,8 +7,12 @@
 </head>
 <body>
     <script>
-        let msg = "Olá seja bem-vindo Javascript!";
-        window.alert(msg);
+        let nome = window.prompt("Digite seu nome:");
+        if (nome) {
+            window.alert(`Olá ${nome}. Bem-vindo a entrada de dados via teclado em Javascript`);
+        } else {
+            window.alert(`Nenhum nome foi digitado`);
+        }
     </script>
 </body>
 </html>

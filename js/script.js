@@ -19,6 +19,10 @@ document.addEventListener('DOMContentLoaded', function() {
         validateEmail(emailInput); 
     }); 
 
+    emailInput.addEventListener('keypress', function() { 
+        emailInput.setCustomValidity(''); 
+    }); 
+
     // 3. Adiciona o ouvinte de evento 'submit' ao formulário para verificação final 
     const form = document.querySelector('form'); 
     form.addEventListener('submit', function(event) { 
